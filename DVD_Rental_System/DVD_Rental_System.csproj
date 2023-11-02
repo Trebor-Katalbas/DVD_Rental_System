@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E627FF78-87B9-4F6A-B9C3-A1A072100F18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DVD_Rental_System</RootNamespace>
+    <AssemblyName>DVD_Rental_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\cust_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\cust_form.Designer.cs">
+      <DependentUpon>cust_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\dvd_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\dvd_form.Designer.cs">
+      <DependentUpon>dvd_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\rents_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\rents_form.Designer.cs">
+      <DependentUpon>rents_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleForms\add_cust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleForms\add_cust.Designer.cs">
+      <DependentUpon>add_cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleForms\add_dvd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleForms\add_dvd.Designer.cs">
+      <DependentUpon>add_dvd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleForms\add_rents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleForms\add_rents.Designer.cs">
+      <DependentUpon>add_rents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\cust_form.resx">
+      <DependentUpon>cust_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\dvd_form.resx">
+      <DependentUpon>dvd_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\rents_form.resx">
+      <DependentUpon>rents_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleForms\add_cust.resx">
+      <DependentUpon>add_cust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleForms\add_dvd.resx">
+      <DependentUpon>add_dvd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleForms\add_rents.resx">
+      <DependentUpon>add_rents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige And Brown Audio Book Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cd-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-view-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-scroll-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hi-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
